@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function atvd7(){
+        var nota1 = parseInt(prompt("Informe a primeira nota: "))
+        var nota2 = parseInt(prompt("Informa a segunda nota: "))
+        var nota3 = parseInt(prompt("Informa a terceira nota: "))
+        var media = (nota1 + nota2 + nota3)/3
+
+        if(media >= 7){
+            document.write("Aprovado por média")
+        }
+        else if(media >= 3 && media < 7){
+            document.write("Prova final")
+        }
+        else{
+            document.write("Reprovado direto")
+        }
+    }
+
+    function atvd8(){
+        var salario = parseFloat(prompt("Informe o salário: "))
+        var reajuste = 0
+        if(salario <= 280){
+            var reajuste = 20
+        }
+        else if(salario > 280 && salario <= 700){
+            var reajuste = 15
+        }
+        else if(salario > 700 && salario <= 1500){
+            var reajuste = 10
+        }
+        else{
+            var reajuste = 5
+        }
+        var aumento = salario * (reajuste / 100)
+        var novoSalario = salario + aumento
+        console.log("O percentual de aumento aplicado: " + reajuste)
+        console.log("O valor do aumento: " + aumento)
+        console.log("O novo salário, após o aumento: " + novoSalario)
+    }
+
+    function atvd9(){
+        var tempF = parseInt(prompt("Informe a temperatura em graus Fharenheit: "))
+        var tempC = (tempF - 32)*5/9
+        document.write(tempC)
+    }
+
+    function atvd10(){
+        var n1 = parseInt(prompt("Informe o primeiro numero: "))
+        var n2 = parseInt(prompt("Informe o segundo numero: "))
+        if(n1 > n2){
+            document.write(n1 + " é maior que " + n2)
+        }
+        else if(n2 > n1){
+            document.write(n2 + " é maior que " + n1)
+        }
+        else{
+            document.write("Os numeros são iguais!")
+        }
+    }
+
+    
+</script>
+<body>
+    <input type="button" onclick="atvd10()" value="alert">
+</body>
+</html>
